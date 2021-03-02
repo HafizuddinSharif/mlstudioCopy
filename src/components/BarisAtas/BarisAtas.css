@@ -1,0 +1,25 @@
+.BarisAtas {
+    background-color: #333333;
+    height: 34px;
+    padding-left: 30px;
+    padding-right: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+p {
+    padding: 0;
+    margin: 0;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    color: #CCCCCC;
+    font-size: 13px;
+    font-family: "Roboto", sans-serif;
+}
+
+.Logo {
+    padding: 7px 12px;
+    background-color: #555555;
+    height: 20px;
+    margin: 0 1px;
+}

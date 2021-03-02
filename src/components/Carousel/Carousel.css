@@ -1,0 +1,107 @@
+.box {
+    padding: 15px 30px;
+    width: 250px;
+    display: inline-block;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    color: #333;
+}
+
+.Carousel {
+    overflow: hidden;
+    border-bottom: 1px solid #eee;
+}
+
+.Carousel .figure {
+    position: relative;
+    width: 400%;
+    left: 0;
+    margin: 0;
+    animation: slider 30s infinite;
+    animation-timing-function: linear;
+}
+
+.figure:hover {
+    animation-play-state: paused;
+}
+
+.box:hover {
+    color: #C70404;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.Carousel .figure .box {
+    float: left;
+}
+
+@keyframes slider {
+    0% {
+        left: 0;
+    }
+    100% {
+        left: -161.5%;
+    }
+  }
+
+.blink {
+    height: 48px;
+    width: 11.1%;
+    position: relative;
+    background-color: #C1BFC5;
+}
+
+.triangle {
+    width: 0;
+    height: 0;
+    left: 210px;
+    border-bottom: 200px solid #C1BFC5;
+    border-right: 100px solid transparent;
+    position: relative;
+}
+
+.rectangle {
+    bottom: 193px;
+    left: 48px;
+    position: relative;
+    z-index: 1;
+}
+
+.rectangle p {
+    color: #333;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+@keyframes up-right {
+    0% {
+        transform: scale(1);
+        opacity: .25
+    }
+    50% {
+        transform: scale (1, 5);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+        opacity: .25;
+    }
+}
+.circle {
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    opacity: .25;
+}
+.red {
+    background-color: red;
+    position: absolute;
+    top: 32%;
+    left: 19%;
+    -webkit-animation: up-right 1s infinite;
+    -moz-animation: up-right 1s infinite;
+    -o-animation: up-right 1s infinite;
+    animation: up-right 1s infinite;
+}
